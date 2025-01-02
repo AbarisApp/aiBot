@@ -27,6 +27,10 @@ import DirectTeamPage from "./pages/network/directTeam";
 import AllTeamPage from "./pages/network/allTeam";
 import UnilevelPage from "./pages/network/unilevel";
 import BusinessHistoryPage from "./pages/network/businessHistory";
+import TradingLevelIncomePage from "./pages/income/tradingLevelIncome";
+import CompoundingProfitIncomePage from "./pages/income/compoundingProfitIncome";
+import GiftTlcProfitPage from "./pages/income/giftTLCProfit";
+import GiftDirectTLCProfitPage from "./pages/income/giftDirectTLCProfit";
 
 
 function App() {
@@ -121,6 +125,10 @@ function App() {
               <Route path="all-team" element={<AllTeamPage />} />
               <Route path="unilevel" element={<UnilevelPage />} />
               <Route path="business-histroy" element={<BusinessHistoryPage />} />
+              <Route path="trading-level-income" element={<TradingLevelIncomePage />} />
+              <Route path="Compounding-profit-income" element={<CompoundingProfitIncomePage />} />
+              <Route path="TLC-profit" element={<GiftTlcProfitPage />} />
+              <Route path="direct-TLC-profit" element={<GiftDirectTLCProfitPage />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>
           </>

@@ -22,7 +22,7 @@ const UnilevelFilter = () => {
                                         />
                                     </div>
                                     <div className="col-xl-4 mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Start Date</label>
+                                        <label for="exampleFormControlInput1" class="form-label">End Date</label>
                                         <input
                                             type="date"
                                             className="form-control"
