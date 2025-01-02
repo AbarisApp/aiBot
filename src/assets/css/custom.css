@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+}
+
+.dataTables_filter label {
+    float: right;
+}
+
+.btn-danger {
+    color: #fff !important;
+    background-color: #f53c5b;
+    border-color: #f53c5b;
+}
+
+
+#modle-header {
+    background-color: aqua !important;
+    color: darkblue;
+}
+
+#form-table {
+    background-color: #000;
+    color: aliceblue;
+}
+
+/* #right-aside-table{
+    background-color: #0f39bb;
+} */
+
+#form-table tr {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(94, 219, 27, 1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(94, 219, 27, 1);
+    box-shadow: 3px 3px 5px 0px rgba(94, 219, 27, 1);
+}
+
+/* .offcanvas-body {
+    background-color: #1200ff2b;
+} */
+
+.modal-footer-1 {
+    padding: 15px;
+}
+
+.modal-footer-1 .btn {
+    margin-right: 10px;
+}
+
+.modle-dilogee .modal-dialog {
+    max-width: 500px;
+}
+
+.tx-danger {
+    color: red;
+}
+
+.modal-footer-btn {
+    padding: 15px;
+}
+
+.me-2-2 {
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+.list-style {
+    padding: 15px;
+    list-style: none;
+}
+
+.list-style li {
+    border-top: solid 1px dashed blueviolet;
+}
+
+.table-all tbody tr td {
+    border-top-width: 0;
+    border-bottom-width: 0;
+    padding: 8px 10px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #5e597d;
+}
+
+.FaRegEdit {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+
+
+/* ---------------------------------- */
+
+
+/* for Tabel Header  */
+.expth {
+    position: relative;
+    padding: 8px;
+    text-align: left;
+    /* Adjust alignment as needed */
+}
+
+.expth .expdiv {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* Handles text overflow */
+}
+
+.ant-pagination-options {
+    display: none !important;
+}
+
+:where(.css-dev-only-do-not-override-1xg9z9n).ant-pagination .ant-pagination-options {
+    display: none !important;
+}
+
+.dilog-Locked .modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* ----some changes input---Daud-- */
+
+.panel_s .hr-panel-separator {
+    --tw-border-opacity: 1;
+    border-color: rgb(226 232 240 / var(--tw-border-opacity));
+    margin: 1.25rem -1.5rem;
+}
+
+.mtop10 {
+    margin-top: 10px;
+}
+
+.radio.radio-inline {
+    margin-top: 0;
+}
+
+.radio {
+    padding-left: 20px;
+}
+
+.checkbox-inline,
+.radio-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.s_table {
+    border: 1px solid grey;
+}
+
+.label-danger {
+    --tw-border-opacity: 1;
+    --tw-bg-opacity: 1;
+    --tw-text-opacity: 1;
+    background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+    border-color: rgb(254 226 226 / var(--tw-border-opacity));
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.label {
+    align-items: center;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    padding: 0.25rem 0.625rem;
+}
+
+.custom_modal_table_responsive {
+    min-height: 0.01%;
+    overflow-x: auto;
+}
+
+.table-bordered,
+.table-bordered>tbody>tr>td,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>td,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>thead>tr>th {
+    border: 1px solid #e2e8f0;
+}
+
+.input-group-addon {
+    border: 1px solid black !important;
+}
+
+/* ------daud css changes End */
+/* ------Shoib css changes Start */
+
+.tScrollbarHide::-webkit-scrollbar {
+    display: none;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border: none; 
+}
