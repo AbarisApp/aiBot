@@ -31,6 +31,11 @@ import TradingLevelIncomePage from "./pages/income/tradingLevelIncome";
 import CompoundingProfitIncomePage from "./pages/income/compoundingProfitIncome";
 import GiftTlcProfitPage from "./pages/income/giftTLCProfit";
 import GiftDirectTLCProfitPage from "./pages/income/giftDirectTLCProfit";
+import Tlc2isoPage from "./pages/TLC2.0/TLC2.0ICO";
+import TLC20ICOAdd from "./pages/TLC2.0/TLC2.0ICO/TLC2.0ICOAdd/TLC2.0ICOAdd";
+import TLC20ICOLevelIncomePage from "./pages/TLC2.0/TLC2.0 ICOLevelIncome";
+import TLC20LevelIncomePage from "./pages/TLC2.0/TLC2.0LevelIncome";
+import TLC20ProfitPage from "./pages/TLC2.0/TLC2.0Profit";
 
 
 function App() {
@@ -129,6 +134,11 @@ function App() {
               <Route path="Compounding-profit-income" element={<CompoundingProfitIncomePage />} />
               <Route path="TLC-profit" element={<GiftTlcProfitPage />} />
               <Route path="direct-TLC-profit" element={<GiftDirectTLCProfitPage />} />
+              <Route path="TLC-ICO" element={<Tlc2isoPage />} />
+              <Route path="buy-TLC-ICO" element={<TLC20ICOAdd />} />
+              <Route path="TLC20-ICO-level-income" element={<TLC20ICOLevelIncomePage />} />
+              <Route path="TLC20-level-income" element={<TLC20LevelIncomePage />} />
+              <Route path="TLC20-profit" element={<TLC20ProfitPage />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>
           </>

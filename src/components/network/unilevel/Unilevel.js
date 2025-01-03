@@ -45,11 +45,9 @@ const Unilevel = () => {
                                                 <th style={{ width: '100px' }}>Rank</th>
                                                 <th style={{ width: '100px' }}>Joined on</th>
                                                 <th style={{ width: '100px' }}>Topuped on</th>
-
                                             </tr>
                                         </thead>
                                         <tbody>
-
                                             <tr role="row" className="odd" key={''}>
                                                 <td></td>
                                                 <td></td>
