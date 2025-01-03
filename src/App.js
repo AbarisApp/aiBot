@@ -23,6 +23,15 @@ import PrivateRoute from "./privateRote/PrivateRoute";
 import DasBoardRight from "./pages/dasBoardRight/DasBoardRight";
 import DashboardLeadPage from "./pages/Dashboard-Lead/Index";
 import PageNotFound from "./common/pageNotFound/PageNotFound";
+import LevelIncome from "./pages/income/levelincome";
+import MatchingIncome from "./pages/income/matchingincome";
+import IbIncome from "./pages/income/ibincome";
+import AchivementIncome from "./pages/income/achivement";
+import CompoundingIncome from "./pages/income/compoundingIncome";
+import RewardIncome from "./pages/income/reward";
+import ClubIncome from "./pages/income/clubincome";
+import StakingMatchingIncome from "./pages/income/stakingMatchingincome";
+import TradingProfitIncome from "./pages/income/tradingProfitIncome";
 import DirectTeamPage from "./pages/network/directTeam";
 import AllTeamPage from "./pages/network/allTeam";
 import UnilevelPage from "./pages/network/unilevel";
@@ -126,6 +135,15 @@ function App() {
               {/* <Route path={`${location?.pathname}`} element={<DasBoardRight />} /> */}
               <Route path={`contest_dashboard`} element={<DasBoardRight />} />
               <Route path={`lead_dashboard`} element={<DashboardLeadPage />} />
+              <Route path="aibot/level-income"element={<LevelIncome />}/>
+              <Route path="aibot/matching-income"element={<MatchingIncome />}/>
+              <Route path="aibot/staking-matching-income"element={<StakingMatchingIncome />}/>
+              <Route path="aibot/ib-income"element={<IbIncome />}/>
+              <Route path="aibot/achivement-income"element={<AchivementIncome />}/>
+              <Route path="aibot/compounding-income"element={<CompoundingIncome />}/>
+              <Route path="aibot/reward-income"element={<RewardIncome />}/>
+              <Route path="aibot/club-income"element={<ClubIncome />}/>
+              <Route path="aibot/trading-income"element={<TradingProfitIncome />}/>
               <Route path="direct-team" element={<DirectTeamPage />} />
               <Route path="all-team" element={<AllTeamPage />} />
               <Route path="unilevel" element={<UnilevelPage />} />
@@ -143,6 +161,7 @@ function App() {
             </Route>
           </>
         )}
+
       </Routes>
     </>
   );
