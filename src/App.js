@@ -40,6 +40,16 @@ import TradingLevelIncomePage from "./pages/income/tradingLevelIncome";
 import CompoundingProfitIncomePage from "./pages/income/compoundingProfitIncome";
 import GiftTlcProfitPage from "./pages/income/giftTLCProfit";
 import GiftDirectTLCProfitPage from "./pages/income/giftDirectTLCProfit";
+import TradingRobotReport from "./pages/robot/tradingRobot";
+import TradingRobotForm from "./components/robot/tradingRobot/tradingRobotForm/TradingRobotForm";
+import RenewalTradingReports from "./pages/robot/renewalTrading";
+import RenewalTradingForm from "./components/robot/renewaltradingRobot/renewalTradingForm/RenewalTradingForm";
+import InvestmentRobotForm from "./components/robot/investRobot/investmentRobotForm/InvestmentRobotForm";
+import IvestmentRobotReports from "./pages/robot/investmentrobotReports";
+import PortfolioReports from "./pages/robot/portfolio";
+import StakingTLCReports from "./pages/staking/stakingTLC";
+import StakingTLCForm from "./components/staking/stakingTLC/stakingTLCForm/StakingTLCForm";
+import StakingIncomeReports from "./pages/staking/stakingTLC/stakingIncome";
 
 
 function App() {
@@ -147,6 +157,16 @@ function App() {
               <Route path="Compounding-profit-income" element={<CompoundingProfitIncomePage />} />
               <Route path="TLC-profit" element={<GiftTlcProfitPage />} />
               <Route path="direct-TLC-profit" element={<GiftDirectTLCProfitPage />} />
+              <Route path="aibot/trading-robot-reports" element={<TradingRobotReport />} />
+              <Route path="aibot/trading-robot-create" element={<TradingRobotForm />} />
+              <Route path="aibot/renewal-trading-reports" element={<RenewalTradingReports />} />
+              <Route path="aibot/renewal-trading-create" element={<RenewalTradingForm />} />
+              <Route path="aibot/investment-robot-reports" element={<IvestmentRobotReports />} />
+              <Route path="aibot/investment-robot-create" element={<InvestmentRobotForm />} />
+              <Route path="aibot/portfolio" element={<PortfolioReports />} />
+              <Route path="aibot/staking-tlc-reports" element={<StakingTLCReports />} />
+              <Route path="aibot/staking-tlc-create" element={<StakingTLCForm />} />
+              <Route path="aibot/staking-income-reports" element={<StakingIncomeReports />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>
           </>
