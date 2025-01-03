@@ -45,6 +45,13 @@ import TLC20ICOAdd from "./pages/TLC2.0/TLC2.0ICO/TLC2.0ICOAdd/TLC2.0ICOAdd";
 import TLC20ICOLevelIncomePage from "./pages/TLC2.0/TLC2.0 ICOLevelIncome";
 import TLC20LevelIncomePage from "./pages/TLC2.0/TLC2.0LevelIncome";
 import TLC20ProfitPage from "./pages/TLC2.0/TLC2.0Profit";
+import DepositviaGatewayPage from "./pages/deposit/depositviaGateway";
+import DepositInvoicePage from "./pages/deposit/depositInvoices";
+import DepositINRPackage from "./pages/deposit/depositINRPackage";
+import DepositINRPackagePage from "./pages/deposit/depositINRPackage";
+import DepositINRStakingPage from "./pages/deposit/depositINRStaking";
+import DepositInvoicesINRPage from "./pages/deposit/depositInvoicesINR";
+import TransfertoPackageWalletPage from "./pages/transfer/transfertoPackageWallet";
 
 
 function App() {
@@ -135,15 +142,15 @@ function App() {
               {/* <Route path={`${location?.pathname}`} element={<DasBoardRight />} /> */}
               <Route path={`contest_dashboard`} element={<DasBoardRight />} />
               <Route path={`lead_dashboard`} element={<DashboardLeadPage />} />
-              <Route path="aibot/level-income"element={<LevelIncome />}/>
-              <Route path="aibot/matching-income"element={<MatchingIncome />}/>
-              <Route path="aibot/staking-matching-income"element={<StakingMatchingIncome />}/>
-              <Route path="aibot/ib-income"element={<IbIncome />}/>
-              <Route path="aibot/achivement-income"element={<AchivementIncome />}/>
-              <Route path="aibot/compounding-income"element={<CompoundingIncome />}/>
-              <Route path="aibot/reward-income"element={<RewardIncome />}/>
-              <Route path="aibot/club-income"element={<ClubIncome />}/>
-              <Route path="aibot/trading-income"element={<TradingProfitIncome />}/>
+              <Route path="aibot/level-income" element={<LevelIncome />} />
+              <Route path="aibot/matching-income" element={<MatchingIncome />} />
+              <Route path="aibot/staking-matching-income" element={<StakingMatchingIncome />} />
+              <Route path="aibot/ib-income" element={<IbIncome />} />
+              <Route path="aibot/achivement-income" element={<AchivementIncome />} />
+              <Route path="aibot/compounding-income" element={<CompoundingIncome />} />
+              <Route path="aibot/reward-income" element={<RewardIncome />} />
+              <Route path="aibot/club-income" element={<ClubIncome />} />
+              <Route path="aibot/trading-income" element={<TradingProfitIncome />} />
               <Route path="direct-team" element={<DirectTeamPage />} />
               <Route path="all-team" element={<AllTeamPage />} />
               <Route path="unilevel" element={<UnilevelPage />} />
@@ -157,6 +164,12 @@ function App() {
               <Route path="TLC20-ICO-level-income" element={<TLC20ICOLevelIncomePage />} />
               <Route path="TLC20-level-income" element={<TLC20LevelIncomePage />} />
               <Route path="TLC20-profit" element={<TLC20ProfitPage />} />
+              <Route path="deposit" element={<DepositviaGatewayPage />} />
+              <Route path="invoices" element={<DepositInvoicePage />} />
+              <Route path="deposit-INR" element={<DepositINRPackagePage />} />
+              <Route path="deposit-INR-Staking" element={<DepositINRStakingPage />} />
+              <Route path="invoices-INR" element={<DepositInvoicesINRPage />} />
+              <Route path="transfer-fund" element={<TransfertoPackageWalletPage />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>
           </>
