@@ -1,6 +1,6 @@
 import React from 'react'
 
-function StakingTLCFillter
+function WithdrawalAmountINRFillter
 () {
     return (
         <>
@@ -11,8 +11,8 @@ function StakingTLCFillter
                         <div className="card-body p-0">
                             <div className="table-responsive active-projects style-1">
                                 <div className="tbl-caption tbl-caption-2">
-                                    <h4 className="heading mb-0 p-2">Staking AIBOT Fillter</h4>
-                                </div>
+                                    <h4 className="heading mb-0 p-2">Bank / KYC Fillter</h4>
+</div>
                                 <form className="tbl-captionn">
                                     <div className="row">
                                         <div className="col-xl-4 mb-3">
@@ -54,5 +54,5 @@ function StakingTLCFillter
     )
 }
 
-export default StakingTLCFillter
+export default WithdrawalAmountINRFillter
 

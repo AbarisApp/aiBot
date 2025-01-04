@@ -62,6 +62,16 @@ import DepositINRPackagePage from "./pages/deposit/depositINRPackage";
 import DepositINRStakingPage from "./pages/deposit/depositINRStaking";
 import DepositInvoicesINRPage from "./pages/deposit/depositInvoicesINR";
 import TransfertoPackageWalletPage from "./pages/transfer/transfertoPackageWallet";
+import BuyAibot from "./pages/buySell/aibotReport";
+import SellAibotReports from "./pages/buySell/sellAibot/SellAibot";
+import BuySellReports from "./pages/buySell/buySellReports";
+import DepositePayment from "./components/deposit/depositINRPackage/depositPayment/DepositePayment";
+import Signup from "./components/signup/Signup";
+import WithdrawalAmountReports from "./pages/financial/withdrawalAmount/Index";
+import WithdrawalAmount from "./components/financial/withdrawalamount/WithdrawalAmount";
+import WithdrawalForm from "./components/financial/withdrawalamount/withdrawalAmountForm/WithdrawalAmountForm";
+import WithdrawalAmountINRReports from "./pages/financial/withdrawalAmountINR";
+import WithdrawalINRForm from "./components/financial/withdrawalamountINR/withdrawalAmountINRForm/WithdrawalAmountINRForm";
 
 
 function App() {
@@ -137,6 +147,7 @@ function App() {
           <>
             <Route path="/" element={<Navigate to={"/loginPage"} />} />
             <Route path="/loginPage" element={<LoginPage />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/reset-password" element={<LoginPasswordReset />} />
             <Route path="*" element={<Navigate to="/loginPage" />} />
@@ -179,18 +190,28 @@ function App() {
               <Route path="aibot/staking-tlc-reports" element={<StakingTLCReports />} />
               <Route path="aibot/staking-tlc-create" element={<StakingTLCForm />} />
               <Route path="aibot/staking-income-reports" element={<StakingIncomeReports />} />
-              <Route path="TLC-ICO" element={<Tlc2isoPage />} />
-              <Route path="buy-TLC-ICO" element={<TLC20ICOAdd />} />
-              <Route path="TLC20-ICO-level-income" element={<TLC20ICOLevelIncomePage />} />
-              <Route path="TLC20-level-income" element={<TLC20LevelIncomePage />} />
-              <Route path="TLC20-profit" element={<TLC20ProfitPage />} />
+              <Route path="AIBOT-ICO" element={<Tlc2isoPage />} />
+              <Route path="buy-Aibot-ICO" element={<TLC20ICOAdd />} />
+              <Route path="AIBOT20-ICO-level-income" element={<TLC20ICOLevelIncomePage />} />
+              <Route path="AIBOT20-level-income" element={<TLC20LevelIncomePage />} />
+              <Route path="AIBOT20-profit" element={<TLC20ProfitPage />} />
               <Route path="deposit" element={<DepositviaGatewayPage />} />
               <Route path="invoices" element={<DepositInvoicePage />} />
               <Route path="deposit-INR" element={<DepositINRPackagePage />} />
               <Route path="deposit-INR-Staking" element={<DepositINRStakingPage />} />
               <Route path="invoices-INR" element={<DepositInvoicesINRPage />} />
               <Route path="transfer-fund" element={<TransfertoPackageWalletPage />} />
+              <Route path="aibot/buy-aibot" element={<BuyAibot />} />
+              <Route path="aibot/sell-aibot-reports" element={<SellAibotReports />} />
+              <Route path="aibot/buy-sell-reports" element={<BuySellReports />} />
+              <Route path="aibot/payment/paymentId=CPJA39DSO335NVJQ5XKXZSGDNN" element={<DepositePayment />} />
+              <Route path="aibot/finance/withdrawal-amount" element={<WithdrawalAmountReports />} />
+              <Route path="aibot/finance/withdrawal-amount-create" element={<WithdrawalForm />} />
+              <Route path="aibot/finance/withdrawal-amount-INR" element={<WithdrawalAmountINRReports />} />
+              <Route path="aibot/finance/withdrawal-amount-INR-create" element={<WithdrawalINRForm />} />
               <Route path="*" element={<PageNotFound />} />
+              {/* <Route path="/signup" element={<Signup />} /> */}
+
             </Route>
           </>
         )}

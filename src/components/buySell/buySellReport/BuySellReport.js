@@ -1,41 +1,42 @@
-import { Empty, Pagination } from 'antd'
+import { Empty } from 'antd'
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Pagination } from 'react-bootstrap'
+import Breadcrumbs from '../../../common/breadcrumb/Breadcrumbs'
 
-function StakingTLCList() {
+function BuySellReport() {
+    const breadCrumbsTitle = {
+        id: "4324",
+        title_1: "Buy Sell",
+        title_2: " AIBOT BUY/SELL Reports",
+    }
     return (
         <>
+            <Breadcrumbs breadCrumbsTitle={breadCrumbsTitle} />
             <div className="row m-4">
                 <div className="col-xl-12">
                     <div className="card">
                         <div className="card-body p-0">
                             <div className="table-responsive active-projects style-1">
                                 <div className="tbl-caption">
-                                    <h4 className="heading mb-0 p-2">Staking AIBOT</h4>
-                                    <Link to={"/aibot/staking-tlc-create"} className='btn btn-primary'>Add Staking TLC</Link>
+                                    <h4 className="heading mb-0 p-2">Buy/Sell Report</h4>
                                 </div>
                                 <div id="banner-tblwrapper_wrapper" className="dataTables_wrapper no-footer">
-                                    
+
                                     <table id="banner-tblwrapper" className="table dataTable no-footer" role="grid" aria-describedby="banner-tblwrapper_info">
                                         <thead>
-                                                <tr role="row">
-                                                    <th style={{ width: '50px' }}>#</th>
-                                                    <th style={{ width: '150px' }}>User ID</th>
-                                                    <th style={{ width: '150px' }}>Name</th>
-                                                    <th style={{ width: '150px' }}>TLC Wallet/Trust Wallet Address</th>
-                                                    <th style={{ width: '150px' }}>Amount</th>
-                                                    <th style={{ width: '150px' }}>Price</th>
-                                                    <th style={{ width: '150px' }}>Tlc Token</th>
-                                                    <th style={{ width: '150px' }}>Percentage</th>
-                                                    <th style={{ width: '150px' }}>Duration</th>
-                                                    <th style={{ width: '150px' }}>Date</th>
-                                                    <th style={{ width: '150px' }}>Remarks</th>
-                                                    <th style={{ width: '150px' }}>Un Stake Date</th>
-                                                </tr>
-                                            </thead>
+                                            <tr role="row">
+                                                <th style={{ width: '50px' }}>#</th>
+                                                <th style={{ width: '150px' }}>Amount </th>
+                                                <th style={{ width: '150px' }}>Price</th>
+                                                <th style={{ width: '150px' }}>Ai Bot</th>
+                                                <th style={{ width: '150px' }}>From Wallet </th>
+                                                <th style={{ width: '150px' }}>Buy/Sell</th>
+                                                <th style={{ width: '150px' }}>Date</th>
+                                            </tr>
+                                        </thead>
                                         <tbody>
                                             <tr role="row">
-                                                <td colSpan={13}>
+                                                <td colSpan={7}>
                                                     <Empty />
                                                 </td>
                                             </tr>
@@ -63,4 +64,4 @@ function StakingTLCList() {
     )
 }
 
-export default StakingTLCList
+export default BuySellReport

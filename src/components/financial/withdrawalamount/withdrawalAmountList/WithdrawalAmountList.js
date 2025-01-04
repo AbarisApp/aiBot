@@ -2,7 +2,7 @@ import { Empty, Pagination } from 'antd'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function StakingTLCList() {
+function WithdrawalAmountList() {
     return (
         <>
             <div className="row m-4">
@@ -11,8 +11,8 @@ function StakingTLCList() {
                         <div className="card-body p-0">
                             <div className="table-responsive active-projects style-1">
                                 <div className="tbl-caption">
-                                    <h4 className="heading mb-0 p-2">Staking AIBOT</h4>
-                                    <Link to={"/aibot/staking-tlc-create"} className='btn btn-primary'>Add Staking TLC</Link>
+                                    <h4 className="heading mb-0 p-2">Withdrawal Amount</h4>
+                                    <Link to={"/aibot/finance/withdrawal-amount-create"} className='btn btn-primary'>Add Withdrawal Amount (USD)</Link>
                                 </div>
                                 <div id="banner-tblwrapper_wrapper" className="dataTables_wrapper no-footer">
                                     
@@ -20,22 +20,16 @@ function StakingTLCList() {
                                         <thead>
                                                 <tr role="row">
                                                     <th style={{ width: '50px' }}>#</th>
-                                                    <th style={{ width: '150px' }}>User ID</th>
-                                                    <th style={{ width: '150px' }}>Name</th>
-                                                    <th style={{ width: '150px' }}>TLC Wallet/Trust Wallet Address</th>
-                                                    <th style={{ width: '150px' }}>Amount</th>
-                                                    <th style={{ width: '150px' }}>Price</th>
-                                                    <th style={{ width: '150px' }}>Tlc Token</th>
-                                                    <th style={{ width: '150px' }}>Percentage</th>
-                                                    <th style={{ width: '150px' }}>Duration</th>
-                                                    <th style={{ width: '150px' }}>Date</th>
-                                                    <th style={{ width: '150px' }}>Remarks</th>
-                                                    <th style={{ width: '150px' }}>Un Stake Date</th>
+                                                    <th style={{ width: '150px' }}>Wallet</th>
+                                                    <th style={{ width: '150px' }}>Address</th>
+                                                    <th style={{ width: '150px' }}>Created At</th>
+                                                    <th style={{ width: '150px' }}>Status</th>
+                                                    
                                                 </tr>
                                             </thead>
                                         <tbody>
                                             <tr role="row">
-                                                <td colSpan={13}>
+                                                <td colSpan={5}>
                                                     <Empty />
                                                 </td>
                                             </tr>
@@ -63,4 +57,4 @@ function StakingTLCList() {
     )
 }
 
-export default StakingTLCList
+export default WithdrawalAmountList

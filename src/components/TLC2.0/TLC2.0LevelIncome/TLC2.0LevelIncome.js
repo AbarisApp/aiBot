@@ -7,8 +7,8 @@ import TLC20LevelIncomeFilter from './TLC2.0LevelIncomeFilter/TLC2.0LevelIncomeF
 const TLC20LevelIncome = () => {
     const breadCrumbsTitle = {
         id: "1",
-        title_1: "TLC2.0",
-        title_2: "TLC2.0 Level Income",
+        title_1: "AIBOT2.0",
+        title_2: "AIBOT2.0 Level Income",
         path_2: ""
     };
     return (

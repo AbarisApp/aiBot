@@ -7,8 +7,8 @@ import TLC20ICOFilter from "../../../pages/TLC2.0/TLC2.0ICO/TLC2.0ICOFilter/TLC2
 const Tlc2iso = () => {
     const breadCrumbsTitle = {
         id: "1",
-        title_1: "TLC2.0",
-        title_2: "TLC2.0 ICO",
+        title_1: "Aibot2.0",
+        title_2: "Aibot2.0 ICO",
         path_2: ""
     };
     return (
@@ -22,9 +22,9 @@ const Tlc2iso = () => {
                         <div className="card-body p-0">
                             <div className="table-responsive active-projects style-1">
                                 <div className="tbl-caption">
-                                    <h4 className="heading mb-0">TLC2.0 ICO Report</h4>
+                                    <h4 className="heading mb-0">Aibot2.0 ICO Report</h4>
                                     <div>
-                                        <Link className="btn btn-primary btn-sm" to="/buy-TLC-ICO" role="button" aria-controls="offcanvasExample">+ Buy TLC2</Link>
+                                        <Link className="btn btn-primary btn-sm" to="/buy-Aibot-ICO" role="button" aria-controls="offcanvasExample">+ Buy Aibot2</Link>
                                     </div>
                                 </div>
                                 <div id="empoloyees-tblwrapper_wrapper" className="dataTables_wrapper no-footer">
