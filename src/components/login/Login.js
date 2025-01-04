@@ -248,6 +248,7 @@ function Login() {
                               >
                                 Forgot Password?
                               </Link>
+                              <Link to={"/signup"}>/Sign Up</Link>
                             </div>
                           </div>
                           <div className="text-center">
@@ -257,6 +258,7 @@ function Login() {
                             >
                               <div className="d-flex justify-content-center align-items-center">
                                 <span style={{ fontSize: "1rem" }}>Sign In</span>
+
                                 &nbsp;
                                 &nbsp;
                                 {loading && <Spinner animation="border" style={{ height: "1rem", width: "1rem" }} />}

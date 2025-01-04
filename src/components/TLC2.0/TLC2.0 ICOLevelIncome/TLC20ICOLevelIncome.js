@@ -7,8 +7,8 @@ import TLC20ICOLevelIncomeFilter from "./TLC2.0 ICOLevelIncomeFilter/TLC2.0 ICOL
 const TLC20ICOLevelIncome = () => {
     const breadCrumbsTitle = {
         id: "1",
-        title_1: "TLC2.0",
-        title_2: "TLC2.0 ICO Level Income",
+        title_1: "AIBOT2.0",
+        title_2: "AIBOT2.0 ICO Level Income",
         path_2: ""
     };
     return (
@@ -22,7 +22,7 @@ const TLC20ICOLevelIncome = () => {
                         <div className="card-body p-0">
                             <div className="table-responsive active-projects style-1">
                                 <div className="tbl-caption">
-                                    <h4 className="heading mb-0">TLC2.0 ICO Level Income</h4>
+                                    <h4 className="heading mb-0">AIBOT.0 ICO Level Income</h4>
                                     {/* <div>
                                         <Link className="btn btn-primary btn-sm" to="/buy-TLC-ICO" role="button" aria-controls="offcanvasExample">+ Buy TLC2</Link>
                                     </div> */}

@@ -7,7 +7,7 @@ function StakingTLC() {
     const breadCrumbsTitle = {
         id: "4324",
         title_1: "Staking",
-        title_2: "Staking TLC",
+        title_2: "Staking Aibot",
       }
     return (
         <>
