@@ -52,6 +52,9 @@ import DepositINRPackagePage from "./pages/deposit/depositINRPackage";
 import DepositINRStakingPage from "./pages/deposit/depositINRStaking";
 import DepositInvoicesINRPage from "./pages/deposit/depositInvoicesINR";
 import TransfertoPackageWalletPage from "./pages/transfer/transfertoPackageWallet";
+import TransferAIBOTGiftNewPage from "./pages/transfer/transferAIBOTGiftNew";
+import { TransferAIBOTGiftNewAdd } from "./components/transfer/transferAIBOTGiftNew/transferAIBOTGiftNewAdd/TransferAIBOTGiftNewAdd";
+import TransferAIBOTRedeemWalletPage from "./pages/transfer/transferAIBOTRedeemWallet/TransferAIBOTRedeemWallet";
 
 
 function App() {
@@ -170,6 +173,9 @@ function App() {
               <Route path="deposit-INR-Staking" element={<DepositINRStakingPage />} />
               <Route path="invoices-INR" element={<DepositInvoicesINRPage />} />
               <Route path="transfer-fund" element={<TransfertoPackageWalletPage />} />
+              <Route path="transfer-fund-AIBOT-Gift" element={<TransferAIBOTGiftNewPage />} />
+              <Route path="transfer-fund-AIBOT-Gift-add" element={<TransferAIBOTGiftNewAdd />} />
+              <Route path="transfer-fund-TLC-redeemable" element={<TransferAIBOTRedeemWalletPage />} />
               <Route path="*" element={<PageNotFound />} />
             </Route>
           </>
