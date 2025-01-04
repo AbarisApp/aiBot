@@ -70,6 +70,9 @@ import WithdrawalAmountReports from "./pages/financial/withdrawalAmount/Index";
 import WithdrawalForm from "./components/financial/withdrawalamount/withdrawalAmountForm/WithdrawalAmountForm";
 import WithdrawalAmountINRReports from "./pages/financial/withdrawalAmountINR";
 import WithdrawalINRForm from "./components/financial/withdrawalamountINR/withdrawalAmountINRForm/WithdrawalAmountINRForm";
+import TransferAIBOTGiftNewPage from "./pages/transfer/transferAIBOTGiftNew";
+import { TransferAIBOTGiftNewAdd } from "./components/transfer/transferAIBOTGiftNew/transferAIBOTGiftNewAdd/TransferAIBOTGiftNewAdd";
+import TransferAIBOTRedeemWalletPage from "./pages/transfer/transferAIBOTRedeemWallet/TransferAIBOTRedeemWallet";
 
 
 function App() {
@@ -207,6 +210,9 @@ function App() {
               <Route path="aibot/finance/withdrawal-amount-create" element={<WithdrawalForm />} />
               <Route path="aibot/finance/withdrawal-amount-INR" element={<WithdrawalAmountINRReports />} />
               <Route path="aibot/finance/withdrawal-amount-INR-create" element={<WithdrawalINRForm />} />
+              <Route path="transfer-fund-AIBOT-Gift" element={<TransferAIBOTGiftNewPage />} />
+              <Route path="transfer-fund-AIBOT-Gift-add" element={<TransferAIBOTGiftNewAdd />} />
+              <Route path="transfer-fund-TLC-redeemable" element={<TransferAIBOTRedeemWalletPage />} />
               <Route path="*" element={<PageNotFound />} />
               {/* <Route path="/signup" element={<Signup />} /> */}
 
