@@ -7,8 +7,8 @@ import TLC20ProfitFilter from "./TLC2.0ProfitFilter/TLC2.0ProfitFilter";
 const TLC20Profit = () => {
     const breadCrumbsTitle = {
         id: "1",
-        title_1: "TLC2.0",
-        title_2: "TLC2.0 Profit",
+        title_1: "AIBOT2.0",
+        title_2: "AIBOT2.0 Profit",
         path_2: ""
     };
     return (
@@ -22,7 +22,7 @@ const TLC20Profit = () => {
                         <div className="card-body p-0">
                             <div className="table-responsive active-projects style-1">
                                 <div className="tbl-caption">
-                                    <h4 className="heading mb-0">TLC2.0 Profit</h4>
+                                    <h4 className="heading mb-0">AIBOT2.0 Profit</h4>
                                     {/* <div>
                                         <Link className="btn btn-primary btn-sm" to="/buy-TLC-ICO" role="button" aria-controls="offcanvasExample">+ Buy TLC2</Link>
                                     </div> */}

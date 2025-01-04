@@ -21,16 +21,17 @@ function StakingmatchinglList() {
                                     <table id="banner-tblwrapper" className="table dataTable no-footer" role="grid" aria-describedby="banner-tblwrapper_info">
                                         <thead>
                                                 <tr role="row">
+                                                    <th style={{ width: '50px' }}>#</th>
                                                     <th style={{ width: '50px' }}>User Id</th>
-                                                    <th style={{ width: '150px' }}>Name</th>
                                                     <th style={{ width: '150px' }}>Income</th>
+                                                    <th style={{ width: '150px' }}>Name</th>
                                                     <th style={{ width: '150px' }}>Level </th>
                                                     <th style={{ width: '150px' }}>Date</th>
                                                 </tr>
                                             </thead>
                                         <tbody>
                                             <tr role="row">
-                                                <td colSpan={5}>
+                                                <td colSpan={6}>
                                                     <Empty />
                                                 </td>
                                             </tr>
