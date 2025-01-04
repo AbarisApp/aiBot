@@ -22,7 +22,7 @@ const TLC20LevelIncome = () => {
                         <div className="card-body p-0">
                             <div className="table-responsive active-projects style-1">
                                 <div className="tbl-caption">
-                                    <h4 className="heading mb-0">TLC2.0 Level Income</h4>
+                                    <h4 className="heading mb-0">AIBOT.0 Level Income</h4>
                                     {/* <div>
                                         <Link className="btn btn-primary btn-sm" to="/buy-TLC-ICO" role="button" aria-controls="offcanvasExample">+ Buy TLC2</Link>
                                     </div> */}
