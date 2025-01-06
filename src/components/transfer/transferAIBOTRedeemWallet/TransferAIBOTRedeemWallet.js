@@ -25,7 +25,7 @@ const TransferAIBOTRedeemWallet = () => {
                                 <div className="tbl-caption">
                                     <h4 className="heading mb-0">Transfer AIBOT 2.0 Redeem Wallet</h4>
                                     <div>
-                                        <Link className="btn btn-primary btn-sm" to="/transfer-fund-AIBOT-Gift-add" role="button" aria-controls="offcanvasExample">+ Transfer Gift AIBOT New Wallet</Link>
+                                        <Link className="btn btn-primary btn-sm" to="/transfer-fund-AIBOT-redeemable-add" role="button" aria-controls="offcanvasExample">+ Transfer Gift AIBOT Redeem Wallet</Link>
                                     </div>
                                 </div>
                                 <div id="empoloyees-tblwrapper_wrapper" className="dataTables_wrapper no-footer">

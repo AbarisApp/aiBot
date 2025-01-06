@@ -75,6 +75,7 @@ import WithdrawalINRForm from "./components/financial/withdrawalamountINR/withdr
 import TransferAIBOTGiftNewPage from "./pages/transfer/transferAIBOTGiftNew";
 import { TransferAIBOTGiftNewAdd } from "./components/transfer/transferAIBOTGiftNew/transferAIBOTGiftNewAdd/TransferAIBOTGiftNewAdd";
 import TransferAIBOTRedeemWalletPage from "./pages/transfer/transferAIBOTRedeemWallet/TransferAIBOTRedeemWallet";
+import TransferAIBOTRedeemWalletAdd from "./components/transfer/transferAIBOTRedeemWallet/transferAIBOTRedeemWalletAdd/TransferAIBOTRedeemWalletAdd";
 
 
 function App() {
@@ -214,7 +215,8 @@ function App() {
               <Route path="aibot/finance/withdrawal-amount-INR-create" element={<WithdrawalINRForm />} />
               <Route path="transfer-fund-AIBOT-Gift" element={<TransferAIBOTGiftNewPage />} />
               <Route path="transfer-fund-AIBOT-Gift-add" element={<TransferAIBOTGiftNewAdd />} />
-              <Route path="transfer-fund-TLC-redeemable" element={<TransferAIBOTRedeemWalletPage />} />
+              <Route path="transfer-fund-AIBOT-redeemable" element={<TransferAIBOTRedeemWalletPage />} />
+              <Route path="transfer-fund-AIBOT-redeemable-add" element={<TransferAIBOTRedeemWalletAdd />} />
               <Route path="*" element={<PageNotFound />} />
               {/* <Route path="/signup" element={<Signup />} /> */}
 
