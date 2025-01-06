@@ -1,7 +1,6 @@
 
-import React from 'react'
 
-const TLC20ICOFilter = () => {
+const WithdrawalReportsFilter = () => {
     return (
         <div className="row m-4">
             <div className="col-xl-12">
@@ -9,7 +8,8 @@ const TLC20ICOFilter = () => {
                     <div className="card-body p-0">
                         <div className="table-responsive active-projects style-1">
                             <div className="tbl-caption tbl-caption-2">
-                                <h4 className="heading mb-0 p-2">Filter AIBOT2.0 ICO</h4>
+                                <h4 className="heading mb-0 p-2">Filter Withdraw Fund
+                                </h4>
                             </div>
                             <form className="tbl-captionn">
                                 <div className="row">
@@ -33,6 +33,7 @@ const TLC20ICOFilter = () => {
                                         // onChange={handleChange}
                                         />
                                     </div>
+
                                     <div className="col-xl-12 text-center">
                                         <button type="button" className="btn btn-primary">
                                             Search
@@ -48,4 +49,4 @@ const TLC20ICOFilter = () => {
     )
 }
 
-export default TLC20ICOFilter
+export default WithdrawalReportsFilter

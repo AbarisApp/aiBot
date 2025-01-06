@@ -57,7 +57,6 @@ import TLC20LevelIncomePage from "./pages/TLC2.0/TLC2.0LevelIncome";
 import TLC20ProfitPage from "./pages/TLC2.0/TLC2.0Profit";
 import DepositviaGatewayPage from "./pages/deposit/depositviaGateway";
 import DepositInvoicePage from "./pages/deposit/depositInvoices";
-import DepositINRPackage from "./pages/deposit/depositINRPackage";
 import DepositINRPackagePage from "./pages/deposit/depositINRPackage";
 import DepositINRStakingPage from "./pages/deposit/depositINRStaking";
 import DepositInvoicesINRPage from "./pages/deposit/depositInvoicesINR";
@@ -68,7 +67,6 @@ import BuySellReports from "./pages/buySell/buySellReports";
 import DepositePayment from "./components/deposit/depositINRPackage/depositPayment/DepositePayment";
 import Signup from "./components/signup/Signup";
 import WithdrawalAmountReports from "./pages/financial/withdrawalAmount/Index";
-import WithdrawalAmount from "./components/financial/withdrawalamount/WithdrawalAmount";
 import WithdrawalForm from "./components/financial/withdrawalamount/withdrawalAmountForm/WithdrawalAmountForm";
 import WithdrawalAmountINRReports from "./pages/financial/withdrawalAmountINR";
 import WithdrawalINRForm from "./components/financial/withdrawalamountINR/withdrawalAmountINRForm/WithdrawalAmountINRForm";
@@ -76,6 +74,16 @@ import TransferAIBOTGiftNewPage from "./pages/transfer/transferAIBOTGiftNew";
 import { TransferAIBOTGiftNewAdd } from "./components/transfer/transferAIBOTGiftNew/transferAIBOTGiftNewAdd/TransferAIBOTGiftNewAdd";
 import TransferAIBOTRedeemWalletPage from "./pages/transfer/transferAIBOTRedeemWallet/TransferAIBOTRedeemWallet";
 import TransferAIBOTRedeemWalletAdd from "./components/transfer/transferAIBOTRedeemWallet/transferAIBOTRedeemWalletAdd/TransferAIBOTRedeemWalletAdd";
+import WhdrawalTradingINRReports from "./pages/financial/withdrawalTradingINR";
+import WithdrawalTradingINRForm from "./components/financial/withdrawalTradingINR/withdrawalTradingINRForm/WithdrawalTradingINRForm";
+import WithdrawalTradingUSDTReports from "./pages/financial/withdrawalTradingUSDTReport";
+import WithdrawalReport from "./pages/financial/withdrawalReports";
+import AccountStatementReports from "./pages/financial/accountStatements";
+import IncomeSummaryReports from "./pages/financial/incomeSummary/IncomeSummary";
+import WalletHaistoryReporyts from "./pages/financial/wallethistory";
+import RewardsReports from "./pages/reward/rewards";
+import SupportsReports from "./pages/support/supports";
+import SupportsForm from "./components/supports/supportsForm/SupportsForm";
 
 
 function App() {
@@ -216,9 +224,19 @@ function App() {
               <Route path="transfer-fund-AIBOT-Gift" element={<TransferAIBOTGiftNewPage />} />
               <Route path="transfer-fund-AIBOT-Gift-add" element={<TransferAIBOTGiftNewAdd />} />
               <Route path="transfer-fund-AIBOT-redeemable" element={<TransferAIBOTRedeemWalletPage />} />
-              <Route path="transfer-fund-AIBOT-redeemable-add" element={<TransferAIBOTRedeemWalletAdd />} />
+              <Route path="aibot/withdrawal-trading-wallet" element={<WhdrawalTradingINRReports />} />
+              <Route path="aibot/withdrawal-trading-wallet-create" element={<WithdrawalTradingINRForm />} />
+              <Route path="aibot/withdrawal-trading-usdt-reports" element={<WithdrawalTradingUSDTReports />} />
+              <Route path="aibot/withdrawal-statements-reports" element={<WithdrawalReport />} />
+              <Route path="aibot/account-statements-reports" element={<AccountStatementReports />} />
+              <Route path="aibot/income-summary-reports" element={<IncomeSummaryReports />} />
+              <Route path="aibot/account-statements-reports" element={<AccountStatementReports />} />
+              <Route path="aibot/wallet-history-reports" element={<WalletHaistoryReporyts />} />
+              <Route path="aibot/rewards-reports" element={<RewardsReports />} />
+              <Route path="aibot/supports-reports" element={<SupportsReports />} />
+              <Route path="aibot/supports-create" element={<SupportsForm />} />
               <Route path="*" element={<PageNotFound />} />
-              {/* <Route path="/signup" element={<Signup />} /> */}
+              <Route path="*" element={<PageNotFound />} />
 
             </Route>
           </>

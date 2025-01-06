@@ -1,7 +1,6 @@
 
-import React from 'react'
 
-const TLC20ICOFilter = () => {
+const AccountStatementFillter = () => {
     return (
         <div className="row m-4">
             <div className="col-xl-12">
@@ -9,7 +8,8 @@ const TLC20ICOFilter = () => {
                     <div className="card-body p-0">
                         <div className="table-responsive active-projects style-1">
                             <div className="tbl-caption tbl-caption-2">
-                                <h4 className="heading mb-0 p-2">Filter AIBOT2.0 ICO</h4>
+                                <h4 className="heading mb-0 p-2">Filter Account Statement
+                                    A               </h4>
                             </div>
                             <form className="tbl-captionn">
                                 <div className="row">
@@ -33,6 +33,15 @@ const TLC20ICOFilter = () => {
                                         // onChange={handleChange}
                                         />
                                     </div>
+                                    <div className="col-xl-4 mb-3 mt-2">
+                                        <label for="exampleFormControlInput1" class="form-label">Select Statement-- <span style={{ color: 'red' }}>*</span></label>
+                                        <select className="form-control" aria-label="Default select example">
+                                            <option selected>Select Statement---</option>
+                                            <option value={1}>New Statement</option>
+                                            <option value={1}>Old Statement</option>
+                                        </select>
+                                    </div>
+
                                     <div className="col-xl-12 text-center">
                                         <button type="button" className="btn btn-primary">
                                             Search
@@ -48,4 +57,4 @@ const TLC20ICOFilter = () => {
     )
 }
 
-export default TLC20ICOFilter
+export default AccountStatementFillter

@@ -248,7 +248,7 @@ function Login() {
                               >
                                 Forgot Password?
                               </Link>
-                              <Link to={"/signup"}>/Sign Up</Link>
+                              {/* <Link to={"/signup"}>/Sign Up</Link> */}
                             </div>
                           </div>
                           <div className="text-center">
@@ -262,6 +262,17 @@ function Login() {
                                 &nbsp;
                                 &nbsp;
                                 {loading && <Spinner animation="border" style={{ height: "1rem", width: "1rem" }} />}
+                              </div>
+                            </button>
+
+                          </div>
+                          <div className="text-center">
+                            <button
+                              className="btn btn-dark comm-bg w-100 "
+                              onClick={()=>navigate(`/signup`)}
+                            >
+                              <div className="d-flex justify-content-center align-items-center">
+                                <span style={{ fontSize: "1rem" }}>New User ? Signup Here</span>
                               </div>
                             </button>
 

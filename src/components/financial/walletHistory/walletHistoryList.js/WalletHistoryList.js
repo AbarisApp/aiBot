@@ -1,20 +1,9 @@
-
-import { Pagination } from 'antd';
+import { Pagination } from 'antd'
 import React from 'react'
-import Breadcrumbs from '../../../common/breadcrumb/Breadcrumbs';
-import TLC20LevelIncomeFilter from './TLC2.0LevelIncomeFilter/TLC2.0LevelIncomeFilter';
 
-const TLC20LevelIncome = () => {
-    const breadCrumbsTitle = {
-        id: "1",
-        title_1: "AIBOT2.0",
-        title_2: "AIBOT2.0 Level Income",
-        path_2: ""
-    };
+function WalletHistoryList() {
     return (
         <>
-            <Breadcrumbs breadCrumbsTitle={breadCrumbsTitle} />
-            <TLC20LevelIncomeFilter />
             <div className="row m-4">
                 {/* {loading && <Loadar />} */}
                 <div className="col-xl-12">
@@ -22,9 +11,10 @@ const TLC20LevelIncome = () => {
                         <div className="card-body p-0">
                             <div className="table-responsive active-projects style-1">
                                 <div className="tbl-caption">
-                                    <h4 className="heading mb-0">AIBOT.0 Level Income</h4>
+                                    <h4 className="heading mb-0">Wallet History
+                                    </h4>
                                     {/* <div>
-                                        <Link className="btn btn-primary btn-sm" to="/buy-TLC-ICO" role="button" aria-controls="offcanvasExample">+ Buy TLC2</Link>
+                                        <Link className="btn btn-primary btn-sm" to="/add-blog" role="button" aria-controls="offcanvasExample">+ Blog Master</Link>
                                     </div> */}
                                 </div>
                                 <div id="empoloyees-tblwrapper_wrapper" className="dataTables_wrapper no-footer">
@@ -36,21 +26,25 @@ const TLC20LevelIncome = () => {
                                     <table id="empoloyees-tblwrapper" className="table dataTable no-footer" role="grid" aria-describedby="empoloyees-tblwrapper_info">
                                         <thead>
                                             <tr role="row">
-                                                <th style={{ width: '50px' }}>S.NO</th>
-                                                <th style={{ width: '150px' }}>User ID</th>
-                                                <th style={{ width: '150px' }}>Name</th>
-                                                <th style={{ width: '150px' }}>Income</th>
-                                                <th style={{ width: '150px' }}>Lavel</th>
-                                                <th style={{ width: '200px' }}>Date</th>
+                                                <th style={{ width: '50px' }}>#</th>
+                                                <th style={{ width: '150px' }}>Wallet </th>
+                                                <th style={{ width: '150px' }}>Amount</th>
+                                                <th style={{ width: '150px' }}>Mode</th>
+                                                <th style={{ width: '150px' }}>Date</th>
+                                                <th style={{ width: '150px' }}>Remarks</th>
+                                                
                                             </tr>
                                         </thead>
                                         <tbody>
+
                                             <tr role="row" className="odd" key={''}>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
+                                                <td></td>
+                                                
                                                 {/* <td>
                                                     <div className="d-flex">
                                                         <Link to={`#`} className="btn btn-primary shadow btn-xs sharp me-1">
@@ -94,4 +88,4 @@ const TLC20LevelIncome = () => {
     )
 }
 
-export default TLC20LevelIncome
+export default WalletHistoryList

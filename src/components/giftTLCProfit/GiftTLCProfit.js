@@ -8,7 +8,7 @@ const GiftTLCProfit = () => {
     const breadCrumbsTitle = {
         id: "1",
         title_1: "Income",
-        title_2: "TLC Profit",
+        title_2: "AIBOT Profit",
         path_2: ""
     };
     return (
@@ -22,7 +22,7 @@ const GiftTLCProfit = () => {
                         <div className="card-body p-0">
                             <div className="table-responsive active-projects style-1">
                                 <div className="tbl-caption">
-                                    <h4 className="heading mb-0">TLC Profit</h4>
+                                    <h4 className="heading mb-0">AIBOT Profit</h4>
                                     {/* <div>
                                         <Link className="btn btn-primary btn-sm" to="/add-blog" role="button" aria-controls="offcanvasExample">+ Blog Master</Link>
                                     </div> */}
@@ -39,7 +39,7 @@ const GiftTLCProfit = () => {
                                                 <th style={{ width: '50px' }}>S.NO</th>
                                                 <th style={{ width: '150px' }}>Amount</th>
                                                 <th style={{ width: '150px' }}>Price</th>
-                                                <th style={{ width: '150px' }}>TLC Token</th>
+                                                <th style={{ width: '150px' }}>AIBOT Token</th>
                                                 <th style={{ width: '200px' }}>Mode</th>
                                                 <th style={{ width: '200px' }}>Date</th>
                                             </tr>
