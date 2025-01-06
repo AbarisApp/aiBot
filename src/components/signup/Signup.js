@@ -104,28 +104,15 @@ function Signup() {
     };
     return (
         <>
-            <div className="authincation h-100 h-100-2">
-                <div className="container">
-                    <div className="row h-100 align-items-center">
-                        <div className="col-md-5 col-xl-5 d-flex flex-column align-items-center justify-content-center text-center">
-                            <img
-                                src={signUpImg}
-                                alt="AIBOT Logo"
-                                className="img-fluid mb-2 h-100 rounded"
-                            />
-                            <h1 className="bg-dark w-100 rounded text-white  mb-2">
-                                <b>AIBOT</b>
-                            </h1>
-                            <p className="text-secondary">Don't Influenced by human emotions</p>
-                        </div>
-
-                        <div className="col-md-7 col-xl-7">
-                            <p className="text-dark font-weight-b">
-                                <b>To keep connected with us, please sign up with your personal
-                                    information by email address and password.</b>
-                            </p>
-
+            <div className="authincation">
+                <div className="container-fluid m-5 p-5 border border-2 border-info " style={{ boxSizing: "border-box" }}>
+                    <div className="row  align-items-center  align-items-stretch">
+                        <div className="col-md-6 col-xl-6">
+                            <div className='text-dark'>
+                                <h1 style={{ fontFamily: "fantasy" }}>Sign up now</h1>
+                            </div>
                             <form onSubmit={handleSubmit}>
+
                                 <div className="row">
                                     <div className="col-xl-6 col-md-6">
                                         <div className="mb-2">
@@ -145,6 +132,7 @@ function Signup() {
                                             )}
                                         </div>
                                     </div>
+
                                     <div className="col-xl-6 col-md-6">
                                         <div className="mb-2">
                                             <label className="form-label">Select Country</label>
@@ -271,45 +259,49 @@ function Signup() {
                                             </select>
                                         </div>
                                     </div>
-                                    <div className="col-xl-6 col-md-6">
-                                        <div className="form-check mb-2">
-                                            <input
-                                                className="form-check-input"
-                                                type="checkbox"
-                                                name="notRobot"
-                                                id="notRobotCheck"
-                                                checked={formData.notRobot}
-                                                onChange={handleInputChange}
-                                            />
-                                            <label className="form-check-label" htmlFor="notRobotCheck">
-                                                I'm not a robot
-                                            </label>
-                                            {/* {formErrors.notRobot && (
+                                </div>
+                                <div className="col-xl-6 col-md-6">
+                                    <div className="form-check mb-2">
+                                        <input
+                                            className="form-check-input"
+                                            type="checkbox"
+                                            name="notRobot"
+                                            id="notRobotCheck"
+                                            checked={formData.notRobot}
+                                            onChange={handleInputChange}
+                                        />
+                                        <label className="form-check-label" htmlFor="notRobotCheck">
+                                            I'm not a robot
+                                        </label>
+                                        {/* {formErrors.notRobot && (
                                                 <small className="form-text text-danger">
                                                     {formErrors.notRobot}
                                                 </small>
                                             )} */}
-                                        </div>
-                                        <div className="form-check mb-2">
-                                            <input
-                                                className="form-check-input"
-                                                type="checkbox"
-                                                name="termsAccepted"
-                                                id="termsCheck"
-                                                checked={formData.termsAccepted}
-                                                onChange={handleInputChange}
-                                            />
-                                            <label className="form-check-label" htmlFor="termsCheck">
-                                                I agree with the website’s <a href="/">Terms and Conditions</a>
-                                            </label>
-                                            {/* {formErrors.termsAccepted && (
+                                    </div>
+
+                                </div>
+                                <div className="col-xl-6 col-md-6">
+                                    <div className="form-check mb-2">
+                                        <input
+                                            className="form-check-input"
+                                            type="checkbox"
+                                            name="termsAccepted"
+                                            id="termsCheck"
+                                            checked={formData.termsAccepted}
+                                            onChange={handleInputChange}
+                                        />
+                                        <label className="form-check-label" htmlFor="termsCheck">
+                                            I agree with the website’s <a href="/">Terms and Conditions</a>
+                                        </label>
+                                        {/* {formErrors.termsAccepted && (
                                                 <small className="form-text text-danger">
                                                     {formErrors.termsAccepted}
                                                 </small>
                                             )} */}
-                                        </div>
                                     </div>
                                 </div>
+
                                 <button
                                     type="submit"
                                     className="btn btn-primary w-100"
@@ -323,8 +315,28 @@ function Signup() {
                                 Already a member? <a href="/loginPage">Sign in</a>
                             </p>
                         </div>
+                        <div className="col-md-6 col-xl-6 d-flex flex-column align-items-center justify-content-center text-center">
+                            <p className="text-dark font-weight-b">
+                                <b>To keep connected with us, please sign up with your personal
+                                    information by email address and password.</b>
+                            </p>
+                            <div className="card">
+
+                                <img
+                                    src={signUpImg}
+                                    alt="AIBOT Logo"
+                                    className="img-fluid mb-2 h-100 rounded"
+                                />
+                                <p className="text-secondary">Don't Influenced by human emotions</p>
+                                <h2 className="bg-dark w-100 rounded text-white  mb-2">
+                                    <b>AIBOT</b>
+                                </h2>
+                            </div>
+                        </div>
+
+
                     </div >
-                </div>
+                </div >
             </div>
         </>
     )
