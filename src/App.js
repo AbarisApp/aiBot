@@ -73,6 +73,7 @@ import WithdrawalINRForm from "./components/financial/withdrawalamountINR/withdr
 import TransferAIBOTGiftNewPage from "./pages/transfer/transferAIBOTGiftNew";
 import { TransferAIBOTGiftNewAdd } from "./components/transfer/transferAIBOTGiftNew/transferAIBOTGiftNewAdd/TransferAIBOTGiftNewAdd";
 import TransferAIBOTRedeemWalletPage from "./pages/transfer/transferAIBOTRedeemWallet/TransferAIBOTRedeemWallet";
+import TransferAIBOTRedeemWalletAdd from "./components/transfer/transferAIBOTRedeemWallet/transferAIBOTRedeemWalletAdd/TransferAIBOTRedeemWalletAdd";
 import WhdrawalTradingINRReports from "./pages/financial/withdrawalTradingINR";
 import WithdrawalTradingINRForm from "./components/financial/withdrawalTradingINR/withdrawalTradingINRForm/WithdrawalTradingINRForm";
 import WithdrawalTradingUSDTReports from "./pages/financial/withdrawalTradingUSDTReport";
